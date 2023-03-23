@@ -3,7 +3,7 @@ package wrappers
 import (
 	"bytes"
 	"fmt"
-	"https://github.com/payu-india/web-sdk-go/utils"
+	"github.com/payu-india/web-sdk-go/utils"
 )
 
 

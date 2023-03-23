@@ -2,8 +2,8 @@ package wrappers
 
 import (
 	"net/url"
-	"https://github.com/payu-india/web-sdk-go/http"
-	"https://github.com/payu-india/web-sdk-go/utils"
+	"github.com/payu-india/web-sdk-go/http"
+	"github.com/payu-india/web-sdk-go/utils"
 	"strconv"
 )
 

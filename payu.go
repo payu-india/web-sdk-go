@@ -1,9 +1,9 @@
-package payu
+package main
 
 import (
 	"errors"
-	"https://github.com/payu-india/web-sdk-go/utils"
-	"https://github.com/payu-india/web-sdk-go/wrappers"
+	"github.com/payu-india/web-sdk-go/utils"
+	"github.com/payu-india/web-sdk-go/wrappers"
 )
 
 type PayuStruct struct {
@@ -17,7 +17,7 @@ type Url struct {
 	apiURL     string
 }
 
-func Payu(creds utils.Creds, env string) (*PayuStruct, error) {
+func Payu(key string, salt string, env string) (*PayuStruct, error) {
 	//initiaze url struct
 	url := Url{}
 	//set the urls based on the env
@@ -31,7 +31,7 @@ func Payu(creds utils.Creds, env string) (*PayuStruct, error) {
 	default:
 		return nil, errors.New("Invalid ENV passed: possible value are TEST and PROD")
 	}
-	return &PayuStruct{creds: creds, env: env, urls: url}, nil
+	return &PayuStruct{creds: utils.Creds{Key: key, Salt: salt}, env: env, urls: url}, nil
 }
 
 func (p *PayuStruct) GeneratePaymentForm(params map[string]interface{}) (string, error) {

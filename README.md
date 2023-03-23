@@ -24,7 +24,7 @@ To get started with PayU, visit our [Developer Guide](https://devguide.payu.in/l
 
 ```shell
 import (
-	Payu "https://github.com/payu-india/web-sdk-go"
+  Payu "https://github.com/payu-india/web-sdk-go"
 )
 ```
 
@@ -35,7 +35,7 @@ Please follow the [installation](#installation) instruction and execute the foll
 
 ```go
 import (
-	PayU "https://github.com/payu-india/web-sdk-go"
+  PayU "https://github.com/payu-india/web-sdk-go"
 )
 payu, err := Payu(
   <YOUR_MERCHANT_KEY>,
@@ -49,18 +49,18 @@ payu, err := Payu(
 
 Method |  Description
 ------------- | -------------
-[**GeneratePaymentForm**](docs/initiate.md) ```[sync]``` | Genereate auto submit HTML form to intitiate transaction 
-[**VerifyPayment**](docs/verifyPayment.md) ```[async]```| Provides the details of a transaction  
-[**GetTransactionDetails**](docs/getTransactionDetails.md) ```[async]```| Provides the details of a transactions for a specfic timeperiod
-[**ValidateVPA**](docs/validateVPA.md) ```[async]```| Used to validate VPA of a user. 
-[**CancelRefundTransaction**](docs/cancelRefundTransaction.md) ```[async]```| Initiate refunds. 
-[**CheckActionStatus**](docs/checkActionStatus.md) ```[async]```| Check the status of a refund.  
-[**GetNetbankingStatus**](docs/getNetbankingStatus.md) ```[async]```| Check downtime status of PGs. 
-[**GetIssuingBankStatus**](docs/getIssuingBankStatus.md) ```[async]```| Check downtime through bin number. 
-[**CheckIsDomestic**](docs/checkIsDomestic.md) ```[async]```| Check the bin information
-[**CreateInvoice**](docs/createInvoice.md) ```[async]```|  Used to create email and SMS invoice ( Pay by link ).
-[**ExpireInvoice**](docs/expireInvoice.md) ```[async]```| Used to expire an existing invoice.
-[**EligibleBinsForEMI**](docs/eligibleBinsForEMI.md) ```[async]```|  Used for checking the card eligibilty for EMI through the bin number.
-[**GetEmiAmountAccordingToInterest**](docs/getEmiAmountAccordingToInterest.md) ```[async]```| Used to fetch interest accordign to Banks and tenure.
-[**GetSettlementDetails**](docs/getSettlementDetails.md) ```[async]```|  Used to fetch settlement details for a particular date.
-[**GetCheckoutDetails**](docs/getCheckoutDetails.md) ```[async]```|  Used to fetch payment options, offers, eligibility, recommendations, and downtime details.
+[**GeneratePaymentForm**](docs/initiate.md)  | Genereate auto submit HTML form to intitiate transaction 
+[**VerifyPayment**](docs/verifyPayment.md) | Provides the details of a transaction  
+[**GetTransactionDetails**](docs/getTransactionDetails.md) | Provides the details of a transactions for a specfic timeperiod
+[**ValidateVPA**](docs/validateVPA.md) | Used to validate VPA of a user. 
+[**CancelRefundTransaction**](docs/cancelRefundTransaction.md) | Initiate refunds. 
+[**CheckActionStatus**](docs/checkActionStatus.md) | Check the status of a refund.  
+[**GetNetbankingStatus**](docs/getNetbankingStatus.md) | Check downtime status of PGs. 
+[**GetIssuingBankStatus**](docs/getIssuingBankStatus.md) | Check downtime through bin number. 
+[**CheckIsDomestic**](docs/checkIsDomestic.md) | Check the bin information
+[**CreateInvoice**](docs/createInvoice.md) |  Used to create email and SMS invoice ( Pay by link ).
+[**ExpireInvoice**](docs/expireInvoice.md) | Used to expire an existing invoice.
+[**EligibleBinsForEMI**](docs/eligibleBinsForEMI.md) |  Used for checking the card eligibilty for EMI through the bin number.
+[**GetEmiAmountAccordingToInterest**](docs/getEmiAmountAccordingToInterest.md) | Used to fetch interest accordign to Banks and tenure.
+[**GetSettlementDetails**](docs/getSettlementDetails.md) |  Used to fetch settlement details for a particular date.
+[**GetCheckoutDetails**](docs/getCheckoutDetails.md) |  Used to fetch payment options, offers, eligibility, recommendations, and downtime details.

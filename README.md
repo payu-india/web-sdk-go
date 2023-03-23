@@ -16,7 +16,7 @@ Following features are supported in the PayU GO web SDK:
 To get started with PayU, visit our [Developer Guide](https://devguide.payu.in/low-code-web-sdk/getting-started-low-code-web-sdk/)
 
 # Table of Contents
- 1. [Usage](#Usage)
+ 1. [Usage](#usage)
  2. [Getting Started](#getting-started)
  3. [Documentation for various Methods](#documentation-for-various-methods)
 
@@ -31,17 +31,15 @@ import (
 
 ## Getting Started
 
-Please follow the [installation](#installation) instruction and execute the following JS code for creating the instance of PayU Object:
+Please follow the [Usage](#usage) instruction and execute the following GO code for creating the instance of PayU Object:
 
 ```go
-import (
-  PayU "https://github.com/payu-india/web-sdk-go"
-)
+
 payu, err := Payu(
   <YOUR_MERCHANT_KEY>,
   <YOUR_MERCHANT_SALT>,
   <ENVIRONMENT>                 // Possible value  = TEST/LIVE
-)     
+) 
 
 ```
 ## Documentation for various Methods 

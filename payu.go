@@ -1,4 +1,4 @@
-package main
+package payu
 
 import (
 	"errors"
@@ -17,7 +17,7 @@ type Url struct {
 	apiURL     string
 }
 
-func Payu(key string, salt string, env string) (*PayuStruct, error) {
+func NewClient(key string, salt string, env string) (*PayuStruct, error) {
 	//initiaze url struct
 	url := Url{}
 	//set the urls based on the env

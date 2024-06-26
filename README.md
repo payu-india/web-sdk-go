@@ -24,7 +24,7 @@ To get started with PayU, visit our [Developer Guide](https://devguide.payu.in/l
 
 ```shell
 import (
-  Payu "github.com/payu-india/web-sdk-go"
+  payu "github.com/payu-india/web-sdk-go"
 )
 ```
 
@@ -35,7 +35,7 @@ Please follow the [Usage](#usage) instruction and execute the following GO code 
 
 ```go
 
-payu, err := Payu(
+payu, err := payu.NewClient(
   <YOUR_MERCHANT_KEY>,
   <YOUR_MERCHANT_SALT>,
   <ENVIRONMENT>                 // Possible value  = TEST/LIVE
